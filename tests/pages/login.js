@@ -7,7 +7,7 @@ class LoginPage {
 
     async goToLoginPage() {
         await this.page.goto('http://localhost/wordpress/wp-login.php');
-        // await this.page.goto('http://localhost/wordpress/wp-login.php?action=logout&_wpnonce=c382f1b2c0');
+        
     }
 
     async fillLoginForm() {
