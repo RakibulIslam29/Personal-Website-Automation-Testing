@@ -1,5 +1,5 @@
 
-# Wordpress Site Automation Testing 
+# Wordpress Site Automation Testing using Page Objecct Model (POM)
 
 This repository contains automated test cases for WP Dark Mode Plugin, written using Playwright, a Node.js library for automating browser interactions.
 
