@@ -1,0 +1,28 @@
+{
+  "name": "personal_wordpress_website_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check-all-functionality": "npm run check-login && npm run check-plugin-activeornot && npm run check-install-plugin && npm run check-backend-darkmode && npm run check-validate-admindashboard && npm run check-navigate-wpdarkmode && npm run check-floating-switch-style && npm run check-custome-switch-size && npm run check-floating-switch-position && npm run check-disable-keyboard-shortcut && npm run check-darkmode-toggle-annimation && npm run check-darkmode-in-frontend",
+    "check-login": "npx playwright test tests/test-case/login.spec.js --workers=1 --project=chromium --headed",
+    "check-plugin-activeornot": "npx playwright test tests/test-case/plugin-check.spec.js --workers=1 --project=chromium --headed",
+    "check-install-plugin": "npx playwright test tests/test-case/install-plugin.spec.js --workers=1 --project=chromium --headed",
+    "check-backend-darkmode": "npx playwright test tests/test-case/backend-darkmode.spec.js --workers=1 --project=chromium --headed",
+    "check-validate-admindashboard": "npx playwright test tests/test-case/validate-admindashboard.spec.js --workers=1 --project=chromium --headed",
+    "check-navigate-wpdarkmode": "npx playwright test tests/test-case/navigate-wpdarkmode.spec.js --workers=1 --project=chromium --headed",
+    "check-floating-switch-style": "npx playwright test tests/test-case/floating-switch-style.spec.js --workers=1 --project=chromium --headed",
+    "check-custome-switch-size": "npx playwright test tests/test-case/custome-switch-size.spec.js --workers=1 --project=chromium --headed",
+    "check-floating-switch-position": "npx playwright test tests/test-case/floating-switch-position.spec.js --workers=1 --project=chromium --headed",
+    "check-disable-keyboard-shortcut": "npx playwright test tests/test-case/disable-keyboard-shortcut.spec.js --workers=1 --project=chromium --headed",
+    "check-darkmode-toggle-annimation": "npx playwright test tests/test-case/darkmode-toggle-annimation.spec.js --workers=1 --project=chromium --headed",
+    "check-darkmode-in-frontend": "npx playwright test tests/test-case/darkmode-in-frontend.spec.js --workers=1 --project=chromium --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7"
+  }
+}
